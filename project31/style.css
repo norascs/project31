@@ -1,0 +1,90 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.welcome-message {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-box {
+    border: 1px solid currentColor;
+    padding: 20px;
+    width: 250px; 
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.title, .description {
+    margin: 10px 0;
+    color: blue;
+}
+
+.description {
+    margin: 10px 0;
+    color: black;
+}
+
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid currentColor;
+}
+
+.content-below, .projects-container {
+    opacity: 0; 
+    transition: opacity 2s ease-in-out;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome-message {
+    min-height: 20vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    text-align: center;
+    margin-top:20%;
+
+}
