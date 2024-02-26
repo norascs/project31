@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="race-container">
+        <!-- Race 1 -->
+        <div class="race" id="race1">
+            <h2>Race: <span class="race-name">Triton 5k</span></h2>
+            <p>Splits: <span class="splits">1 Mile: 8:27, Finish: 6:57</span></p>
+            <p>Overall Placement: <span class="placement">880 of 2228 overall, 256 of 1024 women</span></p>
+            <p>Total Miles: <span class="miles">4.989 km</span> distance</p>
+            <p>Time: <span class="time">00:32:17</span></p>
+            <p>Pace: <span class="pace">9:58</span> min/km</p>
+            <canvas id="race1Chart"></canvas>
+        </div>
+        <!-- Race 2 -->
+        <div class="race" id="race2">
+            <h2>Race: <span class="race-name">San Diego Resolution Run</span></h2>
+            <p>Splits: <span class="splits">5K Time: 30:53, Finish Time: 1:02:23</span></p>
+            <p>Overall Placement: <span class="placement">232nd of 441 overall, 97th among women, 20th of 54 in F 20-29 division</span></p>
+            <p>Total Miles: <span class="miles">6.2 mi</span> distance</p>
+            <p>Time: <span class="time">1:02:23</span></p>
+            <p>Pace: <span class="pace">10:04</span> min/mi</p>
+            <canvas id="race2Chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
